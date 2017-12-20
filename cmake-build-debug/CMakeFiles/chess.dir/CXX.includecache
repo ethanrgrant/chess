@@ -1,0 +1,76 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Game.cpp
+iostream
+-
+Game.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Game.h
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Game.h
+board.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/board.h
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.cpp
+string
+-
+Piece.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
+iosfwd
+-
+vector
+-
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Space.cpp
+Space.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Space.h
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Space.h
+string
+-
+Piece.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/board.cpp
+iostream
+-
+board.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/board.h
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/board.h
+vector
+-
+array
+-
+Space.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Space.h
+pawn.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/pawn.h
+Piece.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/main.cpp
+iostream
+-
+X11/Xlib.h
+-
+Game.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Game.h
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/pawn.cpp
+pawn.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/pawn.h
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/pawn.h
+array
+-
+Piece.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
+
