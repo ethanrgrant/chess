@@ -2,6 +2,7 @@
 // Created by Ethan Grant on 12/16/2017.
 //
 #include <string>
+#include <iostream>
 #include "Piece.h"
 
 #ifndef CHESS_SPACE_H
@@ -19,10 +20,15 @@ public:
         EMPTY
     };
 
-    // constuctor for empty space
     Space(){
+    }
+
+    // constuctor for empty space
+    Space(int rowNum, int colNum){
+        row = rowNum;
+        column = colNum;
+        piece = NULL;
         color = EMPTY;
-        isOccupied = false;
     }
 
     // constuctor for space with piece
@@ -30,12 +36,25 @@ public:
         row = rowNum;
         column = colNum;
         piece = &thePiece;
-        isOccupied = true;
+        if(thePiece.color == Piece::Color::WHITE){
+            color = WHITE;
+        }
+        else if(thePiece.color == Piece::Color::BLACK){
+            color = BLACK;
+        }
+        else{
+            cout << "Tried to assign empty color to space with " << endl;
+        }
     }
 
     const string getValue() const;
 
-    bool isOccupied;
+    bool isOccupied() const;
+
+    void removePiece(Piece& piece);
+
+    void addPiece(Piece& piece);
+
     Occupation color;
     Piece* piece;
     int row;

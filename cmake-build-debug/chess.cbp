@@ -92,10 +92,34 @@
 		<Unit filename="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Game.h">
 			<Option target="chess"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/King.cpp">
+			<Option target="chess"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/King.h">
+			<Option target="chess"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Knight.cpp">
+			<Option target="chess"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Knight.h">
+			<Option target="chess"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.cpp">
 			<Option target="chess"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h">
+			<Option target="chess"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Queen.cpp">
+			<Option target="chess"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Queen.h">
+			<Option target="chess"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Rook.cpp">
+			<Option target="chess"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Rook.h">
 			<Option target="chess"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Space.cpp">

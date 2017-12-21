@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Bishop.cpp
+Bishop.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Bishop.h
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Bishop.h
+Piece.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
+string
+-
+
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Game.cpp
 iostream
 -
@@ -15,6 +25,26 @@ Game.h
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Game.h
 board.h
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/board.h
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/King.cpp
+King.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/King.h
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/King.h
+string
+-
+Piece.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Knight.cpp
+Knight.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Knight.h
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Knight.h
+string
+-
+Piece.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
 
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.cpp
 string
@@ -28,12 +58,34 @@ iosfwd
 vector
 -
 
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Queen.cpp
+Queen.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Queen.h
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Queen.h
+string
+-
+Piece.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Rook.cpp
+Rook.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Rook.h
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Rook.h
+string
+-
+Piece.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
+
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Space.cpp
 Space.h
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Space.h
 
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Space.h
 string
+-
+iostream
 -
 Piece.h
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
@@ -43,6 +95,16 @@ iostream
 -
 board.h
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/board.h
+Rook.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Rook.h
+Knight.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Knight.h
+Bishop.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Bishop.h
+Queen.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Queen.h
+King.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/King.h
 
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/board.h
 vector

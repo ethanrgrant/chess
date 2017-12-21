@@ -177,6 +177,60 @@ Game.cpp.s:
 	$(MAKE) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
+King.o: King.cpp.o
+
+.PHONY : King.o
+
+# target to build an object file
+King.cpp.o:
+	$(MAKE) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/King.cpp.o
+.PHONY : King.cpp.o
+
+King.i: King.cpp.i
+
+.PHONY : King.i
+
+# target to preprocess a source file
+King.cpp.i:
+	$(MAKE) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/King.cpp.i
+.PHONY : King.cpp.i
+
+King.s: King.cpp.s
+
+.PHONY : King.s
+
+# target to generate assembly for a file
+King.cpp.s:
+	$(MAKE) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/King.cpp.s
+.PHONY : King.cpp.s
+
+Knight.o: Knight.cpp.o
+
+.PHONY : Knight.o
+
+# target to build an object file
+Knight.cpp.o:
+	$(MAKE) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/Knight.cpp.o
+.PHONY : Knight.cpp.o
+
+Knight.i: Knight.cpp.i
+
+.PHONY : Knight.i
+
+# target to preprocess a source file
+Knight.cpp.i:
+	$(MAKE) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/Knight.cpp.i
+.PHONY : Knight.cpp.i
+
+Knight.s: Knight.cpp.s
+
+.PHONY : Knight.s
+
+# target to generate assembly for a file
+Knight.cpp.s:
+	$(MAKE) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/Knight.cpp.s
+.PHONY : Knight.cpp.s
+
 Piece.o: Piece.cpp.o
 
 .PHONY : Piece.o
@@ -203,6 +257,60 @@ Piece.s: Piece.cpp.s
 Piece.cpp.s:
 	$(MAKE) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/Piece.cpp.s
 .PHONY : Piece.cpp.s
+
+Queen.o: Queen.cpp.o
+
+.PHONY : Queen.o
+
+# target to build an object file
+Queen.cpp.o:
+	$(MAKE) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/Queen.cpp.o
+.PHONY : Queen.cpp.o
+
+Queen.i: Queen.cpp.i
+
+.PHONY : Queen.i
+
+# target to preprocess a source file
+Queen.cpp.i:
+	$(MAKE) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/Queen.cpp.i
+.PHONY : Queen.cpp.i
+
+Queen.s: Queen.cpp.s
+
+.PHONY : Queen.s
+
+# target to generate assembly for a file
+Queen.cpp.s:
+	$(MAKE) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/Queen.cpp.s
+.PHONY : Queen.cpp.s
+
+Rook.o: Rook.cpp.o
+
+.PHONY : Rook.o
+
+# target to build an object file
+Rook.cpp.o:
+	$(MAKE) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/Rook.cpp.o
+.PHONY : Rook.cpp.o
+
+Rook.i: Rook.cpp.i
+
+.PHONY : Rook.i
+
+# target to preprocess a source file
+Rook.cpp.i:
+	$(MAKE) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/Rook.cpp.i
+.PHONY : Rook.cpp.i
+
+Rook.s: Rook.cpp.s
+
+.PHONY : Rook.s
+
+# target to generate assembly for a file
+Rook.cpp.s:
+	$(MAKE) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/Rook.cpp.s
+.PHONY : Rook.cpp.s
 
 Space.o: Space.cpp.o
 
@@ -327,9 +435,21 @@ help:
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"
+	@echo "... King.o"
+	@echo "... King.i"
+	@echo "... King.s"
+	@echo "... Knight.o"
+	@echo "... Knight.i"
+	@echo "... Knight.s"
 	@echo "... Piece.o"
 	@echo "... Piece.i"
 	@echo "... Piece.s"
+	@echo "... Queen.o"
+	@echo "... Queen.i"
+	@echo "... Queen.s"
+	@echo "... Rook.o"
+	@echo "... Rook.i"
+	@echo "... Rook.s"
 	@echo "... Space.o"
 	@echo "... Space.i"
 	@echo "... Space.s"

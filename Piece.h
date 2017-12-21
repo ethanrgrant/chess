@@ -32,9 +32,9 @@ public:
 
     virtual bool move() = 0;
     virtual const string type() const = 0;
+    Color color;
 
 private:
-    Color color;
     int row;
     int column;
 

@@ -14,15 +14,16 @@ public:
 
     Game(){
         isCheckmate = false;
-        curColor = true;
+        curColor = Space::Occupation::WHITE;
     }
 
     bool playGame();
     bool isCheckmate;
+    Space::Occupation curColor;
+
 private:
 
-    bool curColor;  // true = white, false = black
-    Board board;
+    void flipColor();
 };
 
 

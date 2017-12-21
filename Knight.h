@@ -2,19 +2,17 @@
 // Created by Ethan Grant on 12/20/2017.
 //
 
-#ifndef CHESS_BISHOP_H
-#define CHESS_BISHOP_H
+#ifndef CHESS_KNIGHT_H
+#define CHESS_KNIGHT_H
 
-#include "Piece.h"
 #include <string>
-using namespace std;
+#include "Piece.h"
 
-class Bishop: public Piece {
+class Knight: public Piece {
 
 public:
-
     Color color;
-    Bishop(Color color2){
+    Knight(Color color2){
         color = color2;
     }
     bool move();
@@ -22,4 +20,4 @@ public:
 };
 
 
-#endif //CHESS_BISHOP_H
+#endif //CHESS_KNIGHT_H

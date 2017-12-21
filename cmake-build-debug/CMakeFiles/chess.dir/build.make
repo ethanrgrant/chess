@@ -225,6 +225,102 @@ CMakeFiles/chess.dir/Bishop.cpp.o.provides: CMakeFiles/chess.dir/Bishop.cpp.o.re
 CMakeFiles/chess.dir/Bishop.cpp.o.provides.build: CMakeFiles/chess.dir/Bishop.cpp.o
 
 
+CMakeFiles/chess.dir/Rook.cpp.o: CMakeFiles/chess.dir/flags.make
+CMakeFiles/chess.dir/Rook.cpp.o: ../Rook.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/chess.dir/Rook.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/chess.dir/Rook.cpp.o -c "/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Rook.cpp"
+
+CMakeFiles/chess.dir/Rook.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chess.dir/Rook.cpp.i"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Rook.cpp" > CMakeFiles/chess.dir/Rook.cpp.i
+
+CMakeFiles/chess.dir/Rook.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chess.dir/Rook.cpp.s"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Rook.cpp" -o CMakeFiles/chess.dir/Rook.cpp.s
+
+CMakeFiles/chess.dir/Rook.cpp.o.requires:
+
+.PHONY : CMakeFiles/chess.dir/Rook.cpp.o.requires
+
+CMakeFiles/chess.dir/Rook.cpp.o.provides: CMakeFiles/chess.dir/Rook.cpp.o.requires
+	$(MAKE) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/Rook.cpp.o.provides.build
+.PHONY : CMakeFiles/chess.dir/Rook.cpp.o.provides
+
+CMakeFiles/chess.dir/Rook.cpp.o.provides.build: CMakeFiles/chess.dir/Rook.cpp.o
+
+
+CMakeFiles/chess.dir/Queen.cpp.o: CMakeFiles/chess.dir/flags.make
+CMakeFiles/chess.dir/Queen.cpp.o: ../Queen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/chess.dir/Queen.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/chess.dir/Queen.cpp.o -c "/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Queen.cpp"
+
+CMakeFiles/chess.dir/Queen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chess.dir/Queen.cpp.i"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Queen.cpp" > CMakeFiles/chess.dir/Queen.cpp.i
+
+CMakeFiles/chess.dir/Queen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chess.dir/Queen.cpp.s"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Queen.cpp" -o CMakeFiles/chess.dir/Queen.cpp.s
+
+CMakeFiles/chess.dir/Queen.cpp.o.requires:
+
+.PHONY : CMakeFiles/chess.dir/Queen.cpp.o.requires
+
+CMakeFiles/chess.dir/Queen.cpp.o.provides: CMakeFiles/chess.dir/Queen.cpp.o.requires
+	$(MAKE) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/Queen.cpp.o.provides.build
+.PHONY : CMakeFiles/chess.dir/Queen.cpp.o.provides
+
+CMakeFiles/chess.dir/Queen.cpp.o.provides.build: CMakeFiles/chess.dir/Queen.cpp.o
+
+
+CMakeFiles/chess.dir/King.cpp.o: CMakeFiles/chess.dir/flags.make
+CMakeFiles/chess.dir/King.cpp.o: ../King.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/chess.dir/King.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/chess.dir/King.cpp.o -c "/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/King.cpp"
+
+CMakeFiles/chess.dir/King.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chess.dir/King.cpp.i"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/King.cpp" > CMakeFiles/chess.dir/King.cpp.i
+
+CMakeFiles/chess.dir/King.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chess.dir/King.cpp.s"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/King.cpp" -o CMakeFiles/chess.dir/King.cpp.s
+
+CMakeFiles/chess.dir/King.cpp.o.requires:
+
+.PHONY : CMakeFiles/chess.dir/King.cpp.o.requires
+
+CMakeFiles/chess.dir/King.cpp.o.provides: CMakeFiles/chess.dir/King.cpp.o.requires
+	$(MAKE) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/King.cpp.o.provides.build
+.PHONY : CMakeFiles/chess.dir/King.cpp.o.provides
+
+CMakeFiles/chess.dir/King.cpp.o.provides.build: CMakeFiles/chess.dir/King.cpp.o
+
+
+CMakeFiles/chess.dir/Knight.cpp.o: CMakeFiles/chess.dir/flags.make
+CMakeFiles/chess.dir/Knight.cpp.o: ../Knight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/chess.dir/Knight.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/chess.dir/Knight.cpp.o -c "/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Knight.cpp"
+
+CMakeFiles/chess.dir/Knight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chess.dir/Knight.cpp.i"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Knight.cpp" > CMakeFiles/chess.dir/Knight.cpp.i
+
+CMakeFiles/chess.dir/Knight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chess.dir/Knight.cpp.s"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Knight.cpp" -o CMakeFiles/chess.dir/Knight.cpp.s
+
+CMakeFiles/chess.dir/Knight.cpp.o.requires:
+
+.PHONY : CMakeFiles/chess.dir/Knight.cpp.o.requires
+
+CMakeFiles/chess.dir/Knight.cpp.o.provides: CMakeFiles/chess.dir/Knight.cpp.o.requires
+	$(MAKE) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/Knight.cpp.o.provides.build
+.PHONY : CMakeFiles/chess.dir/Knight.cpp.o.provides
+
+CMakeFiles/chess.dir/Knight.cpp.o.provides.build: CMakeFiles/chess.dir/Knight.cpp.o
+
+
 # Object files for target chess
 chess_OBJECTS = \
 "CMakeFiles/chess.dir/main.cpp.o" \
@@ -233,7 +329,11 @@ chess_OBJECTS = \
 "CMakeFiles/chess.dir/Piece.cpp.o" \
 "CMakeFiles/chess.dir/Game.cpp.o" \
 "CMakeFiles/chess.dir/pawn.cpp.o" \
-"CMakeFiles/chess.dir/Bishop.cpp.o"
+"CMakeFiles/chess.dir/Bishop.cpp.o" \
+"CMakeFiles/chess.dir/Rook.cpp.o" \
+"CMakeFiles/chess.dir/Queen.cpp.o" \
+"CMakeFiles/chess.dir/King.cpp.o" \
+"CMakeFiles/chess.dir/Knight.cpp.o"
 
 # External object files for target chess
 chess_EXTERNAL_OBJECTS =
@@ -245,9 +345,13 @@ chess.exe: CMakeFiles/chess.dir/Piece.cpp.o
 chess.exe: CMakeFiles/chess.dir/Game.cpp.o
 chess.exe: CMakeFiles/chess.dir/pawn.cpp.o
 chess.exe: CMakeFiles/chess.dir/Bishop.cpp.o
+chess.exe: CMakeFiles/chess.dir/Rook.cpp.o
+chess.exe: CMakeFiles/chess.dir/Queen.cpp.o
+chess.exe: CMakeFiles/chess.dir/King.cpp.o
+chess.exe: CMakeFiles/chess.dir/Knight.cpp.o
 chess.exe: CMakeFiles/chess.dir/build.make
 chess.exe: CMakeFiles/chess.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable chess.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable chess.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/chess.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -262,6 +366,10 @@ CMakeFiles/chess.dir/requires: CMakeFiles/chess.dir/Piece.cpp.o.requires
 CMakeFiles/chess.dir/requires: CMakeFiles/chess.dir/Game.cpp.o.requires
 CMakeFiles/chess.dir/requires: CMakeFiles/chess.dir/pawn.cpp.o.requires
 CMakeFiles/chess.dir/requires: CMakeFiles/chess.dir/Bishop.cpp.o.requires
+CMakeFiles/chess.dir/requires: CMakeFiles/chess.dir/Rook.cpp.o.requires
+CMakeFiles/chess.dir/requires: CMakeFiles/chess.dir/Queen.cpp.o.requires
+CMakeFiles/chess.dir/requires: CMakeFiles/chess.dir/King.cpp.o.requires
+CMakeFiles/chess.dir/requires: CMakeFiles/chess.dir/Knight.cpp.o.requires
 
 .PHONY : CMakeFiles/chess.dir/requires
 
