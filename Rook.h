@@ -11,10 +11,10 @@
 class Rook: public Piece {
 
 public:
-    Color color;
     Rook(Color color2){
         color = color2;
     }
+    Color color;
     bool move();
     const string type() const;
 };

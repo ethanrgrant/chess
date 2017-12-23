@@ -134,6 +134,9 @@
 		<Unit filename="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/board.h">
 			<Option target="chess"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/color.h">
+			<Option target="chess"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/main.cpp">
 			<Option target="chess"/>
 		</Unit>

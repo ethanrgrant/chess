@@ -4,35 +4,32 @@
 
 #include <iostream>
 #include "Game.h"
+
 void gameMove(Board& gameBoard, bool curColor) {
     cout << "Input row and column number of piece to move" << endl;
     bool validFromPiece = false;
     bool validToPiece = false;
     while(!validFromPiece){
-        int inRow, inColumn;
+        int inRow, inCol;
         cin >> inRow;
-        cin >> inColumn;
-        Space inSpace;
-        Space outSpace;
-        gameBoard.getSpace(inSpace, inRow, inColumn);
+        cin >> inCol;
         // check if space is empty and
-        if(inSpace.isOccupied() && (inSpace.color == curColor)){
+        if(gameBoard.isSpaceOccupied(inRow, inCol)){
+            int outRow, outCol;
             while(!validToPiece){
                 cout << "input spot to move to" << endl;
-                int outRow, outColumn;
                 cin >> outRow;
-                cin >> outColumn;
-                gameBoard.getSpace(outSpace, outRow, outColumn);
-                if(!outSpace.isOccupied()){
+                cin >> outCol;
+                if(!gameBoard.isSpaceOccupied(outRow, outCol)){
                     validToPiece = true;
                 }
+            }
+            if(!gameBoard.movePiece(inRow, inCol, outRow, outCol)){
+                cout << "Error moving validated pieces" << endl;
             }
             validFromPiece = true;
         } else{
             cout << "Row / column doesn't correspond to a valid piece try again" << endl;
-        }
-        if(!gameBoard.movePiece(inSpace, outSpace)){
-            cout << "Error moving validated pieces" << endl;
         }
     }
 
@@ -49,9 +46,9 @@ bool Game::playGame(){
 }
 
 void Game::flipColor(){
-    if(curColor == Space::Occupation::BLACK){
-        curColor = Space::Occupation ::WHITE;
+    if(curColor == Color::BLACK){
+        curColor = Color::WHITE;
     }else{
-        curColor = Space::Occupation ::BLACK;
+        curColor = Color::BLACK;
     }
 }

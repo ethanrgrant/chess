@@ -7,18 +7,24 @@ const string Space::getValue() const{
     if(isOccupied()){
         return piece->type();
     }
-    return "E";
+    return " ";
 }
 
 bool Space::isOccupied() const{
-    return color != Space::Occupation ::EMPTY;
+    if(piece){
+        return true;
+    } else{
+        return false;
+    }
 }
 
-void Space::removePiece(Piece& movingPiece){
-    movingPiece = *piece;
-    piece = NULL;
+// add ownership of piece to this pointer
+void Space::addPiece(unique_ptr<Piece>& newPiece){
+    piece = std::move(newPiece);
+
 }
 
-void Space::addPiece(Piece& newPiece){
-    piece = &newPiece;
+// Transfer ownership to the refrence
+void Space::removePiece(unique_ptr<Piece>& removedPiece){
+    removedPiece = std::move(piece);
 }

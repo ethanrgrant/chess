@@ -25,6 +25,8 @@ Game.h
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Game.h
 board.h
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/board.h
+color.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/color.h
 
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/King.cpp
 King.h
@@ -57,6 +59,8 @@ iosfwd
 -
 vector
 -
+color.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/color.h
 
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Queen.cpp
 Queen.h
@@ -87,8 +91,12 @@ string
 -
 iostream
 -
+bits/unique_ptr.h
+-
 Piece.h
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
+color.h
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/color.h
 
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/board.cpp
 iostream
@@ -105,6 +113,8 @@ Queen.h
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Queen.h
 King.h
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/King.h
+memory
+-
 
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/board.h
 vector
@@ -117,6 +127,8 @@ pawn.h
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/pawn.h
 Piece.h
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
+
+/cygdrive/c/Users/Ethan Grant/CLionProjects/chess/color.h
 
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/main.cpp
 iostream

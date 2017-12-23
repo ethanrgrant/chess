@@ -20,18 +20,20 @@ public:
         buildBoard();
     }
 
-    void getSpace(Space& space, int row, int column);
+    bool isSpaceOccupied(int row, int column);
+
+    Color getColor(int row, int col);
 
     void printBoard();
 
-    bool movePiece(Space& inspace, Space& outSpace);
+    bool movePiece(int inRow, int inCol, int outRow, int outCol);
 private:
 
     void buildBoard();
 
-    void buildRow(int rowNumn, Piece::Color color);
+    void buildRow(int rowNumn, Color color);
 
-    void buildFilledRow(bool isPawn, int rowNum, Piece::Color color);
+    void buildFilledRow(bool isPawn, int rowNum, Color color);
 
     array<array<Space*, 8>, 8> board;
 };

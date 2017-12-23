@@ -5,36 +5,44 @@ CMakeFiles/chess.dir/Bishop.cpp.o
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Bishop.cpp
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Bishop.h
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
+ /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/color.h
 CMakeFiles/chess.dir/Game.cpp.o
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Game.cpp
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Game.h
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Space.h
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/board.h
+ /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/color.h
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/pawn.h
 CMakeFiles/chess.dir/King.cpp.o
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/King.cpp
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/King.h
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
+ /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/color.h
 CMakeFiles/chess.dir/Knight.cpp.o
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Knight.cpp
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Knight.h
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
+ /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/color.h
 CMakeFiles/chess.dir/Piece.cpp.o
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.cpp
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
+ /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/color.h
 CMakeFiles/chess.dir/Queen.cpp.o
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Queen.cpp
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Queen.h
+ /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/color.h
 CMakeFiles/chess.dir/Rook.cpp.o
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Rook.cpp
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Rook.h
+ /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/color.h
 CMakeFiles/chess.dir/Space.cpp.o
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Space.cpp
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Space.h
+ /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/color.h
 CMakeFiles/chess.dir/board.cpp.o
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Bishop.h
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/King.h
@@ -45,15 +53,18 @@ CMakeFiles/chess.dir/board.cpp.o
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Space.h
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/board.cpp
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/board.h
+ /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/color.h
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/pawn.h
 CMakeFiles/chess.dir/main.cpp.o
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Game.h
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Space.h
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/board.h
+ /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/color.h
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/main.cpp
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/pawn.h
 CMakeFiles/chess.dir/pawn.cpp.o
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
+ /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/color.h
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/pawn.cpp
  /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/pawn.h

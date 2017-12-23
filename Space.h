@@ -3,7 +3,9 @@
 //
 #include <string>
 #include <iostream>
+#include <bits/unique_ptr.h>
 #include "Piece.h"
+#include "color.h"
 
 #ifndef CHESS_SPACE_H
 #define CHESS_SPACE_H
@@ -14,32 +16,24 @@ class Space {
 
 public:
 
-    enum Occupation{
-        WHITE,
-        BLACK,
-        EMPTY
-    };
-
-    Space(){
-    }
+    Space(){};
 
     // constuctor for empty space
     Space(int rowNum, int colNum){
         row = rowNum;
         column = colNum;
-        piece = NULL;
         color = EMPTY;
     }
 
     // constuctor for space with piece
-    Space(int rowNum, int colNum, Piece& thePiece){
+    Space(int rowNum, int colNum, Piece* thePiece){
         row = rowNum;
         column = colNum;
-        piece = &thePiece;
-        if(thePiece.color == Piece::Color::WHITE){
+        piece = unique_ptr<Piece>(thePiece);
+        if(thePiece->color == Color::WHITE){
             color = WHITE;
         }
-        else if(thePiece.color == Piece::Color::BLACK){
+        else if(thePiece->color == Color::BLACK){
             color = BLACK;
         }
         else{
@@ -51,14 +45,22 @@ public:
 
     bool isOccupied() const;
 
-    void removePiece(Piece& piece);
+    void removePiece(unique_ptr<Piece>& removedPiece);
 
-    void addPiece(Piece& piece);
+    void addPiece(unique_ptr<Piece>& newPiece);
 
-    Occupation color;
-    Piece* piece;
+    Color color;
+    unique_ptr<Piece> piece;
     int row;
     int column;
+
+    Space& operator=(Space&& copySpace){
+        piece = std::move(copySpace.piece);
+        int row = copySpace.row;
+        int column = copySpace.column;
+        return *this;
+    }
+
 private:
 
 };

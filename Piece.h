@@ -7,17 +7,13 @@
 
 #include <iosfwd>
 #include <vector>
+#include "color.h"
 
 using namespace std;
 
 class Piece {
 
 public:
-
-    enum Color{
-        WHITE,
-        BLACK
-    };
 
     enum PieceTypes{
         ROOK,

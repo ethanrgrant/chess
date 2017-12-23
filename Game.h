@@ -7,6 +7,7 @@
 
 
 #include "board.h"
+#include "color.h"
 
 class Game {
 
@@ -14,12 +15,12 @@ public:
 
     Game(){
         isCheckmate = false;
-        curColor = Space::Occupation::WHITE;
+        curColor = Color::WHITE;
     }
 
     bool playGame();
     bool isCheckmate;
-    Space::Occupation curColor;
+    Color curColor;
 
 private:
 
