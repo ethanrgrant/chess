@@ -3,8 +3,11 @@
 //
 
 #include "Rook.h"
-bool Rook::move(){
-    return true;
+bool Rook::move(int row, int col){
+    if(curRow == row || curCol == col){
+        return true;
+    }
+    return false;
 }
 
 const string Rook::type() const{

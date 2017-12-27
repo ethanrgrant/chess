@@ -14,7 +14,9 @@ void gameMove(Board& gameBoard, bool curColor) {
         cin >> inRow;
         cin >> inCol;
         // check if space is empty and
-        if(gameBoard.isSpaceOccupied(inRow, inCol)){
+        cout << gameBoard.getColor(inRow, inCol) << endl;
+        cout << curColor << endl;
+        if(gameBoard.isSpaceOccupied(inRow, inCol) && gameBoard.getColor(inRow, inCol)==curColor){
             int outRow, outCol;
             while(!validToPiece){
                 cout << "input spot to move to" << endl;

@@ -13,11 +13,12 @@ class Bishop: public Piece {
 
 public:
 
-    Color color;
-    Bishop(Color color2){
-        color = color2;
+    Bishop(Color color_, int row, int col){
+        color = color_;
+        curRow = row;
+        curCol = col;
     }
-    bool move();
+    bool move(int row, int col);
     const string type() const;
 };
 

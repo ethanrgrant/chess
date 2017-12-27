@@ -30,15 +30,7 @@ public:
         row = rowNum;
         column = colNum;
         piece = unique_ptr<Piece>(thePiece);
-        if(thePiece->color == Color::WHITE){
-            color = WHITE;
-        }
-        else if(thePiece->color == Color::BLACK){
-            color = BLACK;
-        }
-        else{
-            cout << "Tried to assign empty color to space with " << endl;
-        }
+        color = thePiece->color;
     }
 
     const string getValue() const;
@@ -53,13 +45,6 @@ public:
     unique_ptr<Piece> piece;
     int row;
     int column;
-
-    Space& operator=(Space&& copySpace){
-        piece = std::move(copySpace.piece);
-        int row = copySpace.row;
-        int column = copySpace.column;
-        return *this;
-    }
 
 private:
 

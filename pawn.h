@@ -13,12 +13,17 @@ using namespace std;
 class Pawn: public Piece{
 
 public:
-    Color color;
-    Pawn(Color color2){
-        color = color2;
+
+    Pawn(Color color_, int row, int col){
+        color = color_;
+        hasMoved = false;
+        curRow = row;
+        curCol = col;
     }
-    bool move();
+    bool move(int row, int col);
     const string type() const;
+private:
+    bool hasMoved;
 };
 
 

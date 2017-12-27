@@ -6,16 +6,18 @@
 #define CHESS_ROOK_H
 
 #include <string>
+#include <iostream>
 #include "Piece.h"
 
 class Rook: public Piece {
 
 public:
-    Rook(Color color2){
-        color = color2;
+    Rook(Color color_, int row, int col){
+        color = color_;
+        curRow = row;
+        curCol = col;
     }
-    Color color;
-    bool move();
+    bool move(int row, int col);
     const string type() const;
 };
 

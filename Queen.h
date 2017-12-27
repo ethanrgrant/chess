@@ -11,12 +11,13 @@
 class Queen: public Piece {
 
 public:
-    Color color;
-    Queen(Color color2){
-        color = color2;
+    Queen(Color color_, int row, int col){
+        color = color_;
+        curRow = row;
+        curCol = col;
     }
-    bool move();
     const string type() const;
+    bool move(int row, int col);
 };
 
 

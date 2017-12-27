@@ -51,6 +51,8 @@ Piece.h
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.cpp
 string
 -
+iostream
+-
 Piece.h
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h
 
@@ -78,6 +80,8 @@ Rook.h
 
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Rook.h
 string
+-
+iostream
 -
 Piece.h
 /cygdrive/c/Users/Ethan Grant/CLionProjects/chess/Piece.h

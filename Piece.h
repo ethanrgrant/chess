@@ -15,24 +15,17 @@ class Piece {
 
 public:
 
-    enum PieceTypes{
-        ROOK,
-        KNIGHT,
-        BISHOP,
-        KING,
-        QUEEN,
-        PAWN
-    };
+    void colorText( Color color );
 
-    const char * colorText( Color color );
-
-    virtual bool move() = 0;
+    // this function determines whether a move is legal. Not whether it is possible
+    // it is up to the board to check if there are pieces in the way.
+    virtual bool move(int row, int col) = 0;
     virtual const string type() const = 0;
     Color color;
-
+    int curRow;
+    int curCol;
 private:
-    int row;
-    int column;
+
 
 };
 

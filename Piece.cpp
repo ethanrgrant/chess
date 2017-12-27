@@ -3,12 +3,15 @@
 //
 
 #include <string>
+#include <iostream>
 #include "Piece.h"
 
-const char * Piece::colorText( Color color )
+void Piece::colorText( Color color )
 {
     switch(color){
-        case(WHITE): return "WHITE";
-        case(BLACK): return "BLACK";
+        case(BLACK): std::cout << "BLACK"; break;
+        case(WHITE): std::cout << "WHITE"; break;
+        case(EMPTY): std::cout << "EMPTY"; break;
+        default: std::cout << "UHOH";
     }
 }

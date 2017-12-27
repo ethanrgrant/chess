@@ -4,7 +4,8 @@
 
 #include "Knight.h"
 
-bool Knight::move(){
+// L moves TODO
+bool Knight::move(int row, int col){
     return true;
 }
 

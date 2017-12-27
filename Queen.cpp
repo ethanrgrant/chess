@@ -4,8 +4,15 @@
 
 #include "Queen.h"
 
-bool Queen::move(){
-    return true;
+bool Queen::move(int row, int col){
+    // move forward or back
+    if(curCol==col ){
+        return true;
+    }
+    else if(curCol-col==curRow-row){
+        return true;
+    }
+    return false;
 }
 
 const string Queen::type() const{

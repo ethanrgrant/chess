@@ -4,8 +4,12 @@
 
 #include "Bishop.h"
 
-bool Bishop::move(){
-    return true;
+bool Bishop::move(int row, int col){
+    // diagonal move
+    if(curRow-row == curCol-col){
+        return true;
+    }
+    return false;
 }
 
 const string Bishop::type() const{
