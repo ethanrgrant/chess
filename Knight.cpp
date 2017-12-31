@@ -12,3 +12,7 @@ bool Knight::move(int row, int col){
 const string Knight::type() const{
     return "K";
 }
+
+bool Knight::attack(int row, int col){
+    return true;
+}

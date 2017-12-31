@@ -15,3 +15,7 @@ bool Bishop::move(int row, int col){
 const string Bishop::type() const{
     return "B";
 }
+
+bool Bishop::attack(int row, int col){
+    return true;
+}

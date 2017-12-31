@@ -38,8 +38,8 @@ public:
     bool isOccupied() const;
 
     void removePiece(unique_ptr<Piece>& removedPiece);
-
     void addPiece(unique_ptr<Piece>& newPiece);
+    void deletePiece();
 
     Color color;
     unique_ptr<Piece> piece;

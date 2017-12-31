@@ -25,14 +25,16 @@ public:
     Color getColor(int row, int col);
 
     void printBoard();
-
+    bool isValidAttack(int inRow, int inCol, int outRow, int outCol);
+    bool isValidMovement(int inRow, int inCol, int outRow, int outCol);
     bool movePiece(int inRow, int inCol, int outRow, int outCol);
 private:
 
     void buildBoard();
-
+    bool isValidRowMovement(int inRow, int inCol, int outRow);
+    bool isValidColMovement(int inRow, int inCol, int outCol);
+    bool isValidDiagMovement(int inRow, int inCol, int outRow, int outCol);
     void buildRow(int rowNumn, Color color);
-
     void buildFilledRow(bool isPawn, int rowNum, Color color);
 
     array<array<Space*, 8>, 8> board;

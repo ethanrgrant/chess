@@ -6,6 +6,7 @@
 #include <iostream>
 #include "Piece.h"
 
+// TODO this doesn't belong here
 void Piece::colorText( Color color )
 {
     switch(color){

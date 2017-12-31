@@ -13,3 +13,7 @@ bool King::move(int row, int col){
 const string King::type() const{
     return "K";
 }
+
+bool King::attack(int row, int col){
+    return true;
+}

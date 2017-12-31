@@ -21,6 +21,7 @@ public:
     // it is up to the board to check if there are pieces in the way.
     virtual bool move(int row, int col) = 0;
     virtual const string type() const = 0;
+    virtual bool attack(int row, int col) = 0;
     Color color;
     int curRow;
     int curCol;

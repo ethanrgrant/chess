@@ -19,6 +19,7 @@ public:
         curCol = col;
     }
     bool move(int row, int col);
+    bool attack(int row, int col);
     const string type() const;
 };
 

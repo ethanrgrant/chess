@@ -13,25 +13,27 @@ void gameMove(Board& gameBoard, bool curColor) {
         int inRow, inCol;
         cin >> inRow;
         cin >> inCol;
-        // check if space is empty and
-        cout << gameBoard.getColor(inRow, inCol) << endl;
-        cout << curColor << endl;
-        if(gameBoard.isSpaceOccupied(inRow, inCol) && gameBoard.getColor(inRow, inCol)==curColor){
-            int outRow, outCol;
-            while(!validToPiece){
-                cout << "input spot to move to" << endl;
-                cin >> outRow;
-                cin >> outCol;
-                if(!gameBoard.isSpaceOccupied(outRow, outCol)){
-                    validToPiece = true;
+        // check if space is occupied and color of piece is correct
+        if(gameBoard.isSpaceOccupied(inRow, inCol)){
+            if(gameBoard.getColor(inRow, inCol)==curColor) {
+                int outRow, outCol;
+                while (!validToPiece) {
+                    cout << "input spot to move to" << endl;
+                    cin >> outRow;
+                    cin >> outCol;
+                    if (gameBoard.movePiece(inRow, inCol, outRow, outCol)) {
+                        validToPiece = true;
+                        validFromPiece = true;
+                    } else {
+                        cout << "The spot to move to was not valid" << endl;
+                    }
                 }
             }
-            if(!gameBoard.movePiece(inRow, inCol, outRow, outCol)){
-                cout << "Error moving validated pieces" << endl;
+            else{
+                cout << "The piece selected is not the correct color" << endl;
             }
-            validFromPiece = true;
         } else{
-            cout << "Row / column doesn't correspond to a valid piece try again" << endl;
+            cout << "There is no piece on the selected space" << endl;
         }
     }
 

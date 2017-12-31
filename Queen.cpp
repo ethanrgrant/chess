@@ -18,3 +18,7 @@ bool Queen::move(int row, int col){
 const string Queen::type() const{
     return "Q";
 }
+
+bool Queen::attack(int row, int col){
+    return true;
+}

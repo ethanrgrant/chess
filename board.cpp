@@ -33,14 +33,9 @@ void print_cols(){
     cout << endl;
 }
 
-inline void print_line(){
-    cout << "________________________________________________________________" << endl;
-}
 // prints the board
 void Board::printBoard(){
     cout << "Printing Board" << endl;
-    //print_cols();
-    //print_line();
     for(const auto& row: board){
         cout << "|\t";
         for(const auto& space: row){
@@ -53,9 +48,7 @@ void Board::printBoard(){
             }
         }
         cout << endl;
-        //print_line();
     }
-    //print_cols();
 }
 
 // Private Functions
@@ -83,8 +76,121 @@ void Board::buildBoard(){
 
 bool Board::movePiece(int inRow, int inCol, int outRow, int outCol){
     unique_ptr<Piece> pieceToMove;
-    board[inRow][inCol]->removePiece(pieceToMove);
-    board[outRow][outCol]->addPiece(pieceToMove);
+    // checks if this is an attack move
+    if(isSpaceOccupied(outRow, outCol) && getColor(outRow, outCol) != getColor(inRow, inCol)){
+        if(!isValidAttack(inRow, inCol, outRow, outCol))
+            return false;
+        else{
+            if(board[inRow][inCol]->piece->attack(outRow, outCol)) {
+                // put piece in pointer, delete captured piece, add new piece
+                board[inRow][inCol]->removePiece(pieceToMove);
+                board[outRow][outCol]->deletePiece();
+                board[outRow][outCol]->addPiece(pieceToMove);
+                return true;
+            }
+        }
+    }
+    else if(!isValidMovement(inRow, inCol, outRow, outCol)){
+        return false;
+    }
+    else{
+        if(board[inRow][inCol]->piece->move(outRow, outCol)) {
+            // change piece pointer ownership from one space to another
+            board[inRow][inCol]->removePiece(pieceToMove);
+            board[outRow][outCol]->addPiece(pieceToMove);
+            return true;
+        }
+    }
+    // check if move is legal from rules of piece and move piece ownership
+
+    return false;
+}
+
+// to check an attack you only need to check up to right before the proper space
+bool Board::isValidAttack(int inRow, int inCol, int outRow, int outCol){
+    if(inCol==outCol){
+        return isValidRowMovement(inRow, inCol, --outRow);
+    }
+    else if(inRow==outRow){
+        return isValidColMovement(inRow, inCol, --outCol);
+    }
+    else if(inRow!=outRow && inCol!=outCol){
+        return isValidDiagMovement(inRow, inCol, --outRow, --outCol);
+    }
+    else{
+        return false;
+    }
+}
+// determines the type of movement and directs to correct helper function
+bool Board::isValidMovement(int inRow, int inCol, int outRow, int outCol){
+    if(inCol==outCol){
+        return isValidRowMovement(inRow, inCol, outRow);
+    }
+    else if(inRow==outRow){
+        return isValidColMovement(inRow, inCol, outCol);
+    }
+    else if(inRow!=outRow && inCol!=outCol){
+        return isValidDiagMovement(inRow, inCol, outRow, outCol);
+    }
+    else{
+        return false;
+    }
+}
+
+// checks if all intervening spaces between (inRow,inCol) and (outRow, inCol) are empty
+bool Board::isValidRowMovement(int inRow, int inCol, int outRow){
+    cout << "checking if movement between rows is valid" << endl;
+    if(inRow<outRow){
+        for(int i=inRow+1; i<=outRow; i++){
+            cout << " checking space (" << i << "," << inCol << ")" <<endl;
+            if(isSpaceOccupied(i, inCol)){
+                cout << "space (" << i << "," << inCol << ") is occupied" <<endl;
+                return false;
+            }
+        }
+    }
+    else if(inRow>outRow){
+        for(int i=inRow-1; i>=outRow; i--){
+            cout << " checking space (" << i << "," << inCol << ")" <<endl;
+            if(isSpaceOccupied(i, inCol)){
+                cout << "space (" << i << "," << inCol << ") is occupied" << endl;
+                return false;
+            }
+        }
+    }
+    else{
+        return false;
+    }
+    return true;
+}
+
+// movement along a column
+bool Board::isValidColMovement(int inRow, int inCol, int outCol){
+    // for black moving down the board
+    cout << "checking column movement" << endl;
+    if(inCol<outCol){
+        for(int curCol=inCol; curCol<=outCol; curCol++){
+            if(isSpaceOccupied(inRow, curCol)){
+                return false;
+            }
+        }
+    }
+    // for black moving down the board
+    else if(inCol>outCol){
+        for(int curCol=inCol; curCol>=outCol; curCol--){
+            if(isSpaceOccupied(inRow, curCol)){
+                return false;
+            }
+        }
+    }
+    else{
+        return false;
+    }
+    return true;
+}
+
+// TODO implement diag testing
+bool Board::isValidDiagMovement(int inRow, int inCol, int outRow, int outCol){
     return true;
 }
 

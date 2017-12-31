@@ -28,3 +28,7 @@ void Space::addPiece(unique_ptr<Piece>& newPiece){
 void Space::removePiece(unique_ptr<Piece>& removedPiece){
     removedPiece = std::move(piece);
 }
+
+void Space::deletePiece(){
+    piece.reset();
+}

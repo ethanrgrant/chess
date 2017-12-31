@@ -13,3 +13,7 @@ bool Rook::move(int row, int col){
 const string Rook::type() const{
     return "R";
 }
+
+bool Rook::attack(int row, int col){
+    return true;
+}
